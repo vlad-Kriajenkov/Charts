@@ -1,0 +1,814 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;1,100&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+main {
+  flex: 0 0 auto;
+}
+
+footer {
+  flex: 0 0 auto;
+}
+
+.notificationAndСondition__СonditionSystem, .notificationAndСondition__notification, .AverageСarStats {
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.columnNames__connection, .columnNames__status, .columnNames__car, .СonditionSystem_title h1, .notification__title h1, .box__title, .AverageСarStats__nmae p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 12px;
+  color: #da6e00;
+}
+
+.normalCondition__nameStatus p, .normalCondition__nameCar, .infoWarning__buttonAddWarning, .infoWarningr__name, .warning__nameCar, .СonditionSystem__buttonCloseAll, .СonditionSystem__buttonShowAll, .warningInfo__infoText, .truckEmpty__infoText, .weHaveInfo__buttonCloseAll, .weHaveInfo__buttonShowAll, .infoBody__notInfo p, .AverageСarStats__meaning p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 10px;
+  color: #da6e00;
+}
+
+main {
+  height: 600px;
+}
+
+.conatiner__dashboard {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.dashboard {
+  margin-bottom: 20px;
+}
+.dashboard__title {
+  margin: 20px 0px 20px 0px;
+}
+.dashboard__title h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #da6e00;
+}
+
+/* Пункт Статистика не рабочего стостояния Машины за «Период»*/
+.AverageСarStats {
+  margin: 10px 0px 10px 0px;
+  margin-bottom: 20px;
+}
+.AverageСarStats__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.AverageСarStats__nmae {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background: #da6e00;
+  border-radius: 6px;
+  height: 40px;
+  color: white;
+  margin-bottom: 10px;
+}
+.AverageСarStats__nmae p {
+  color: white;
+  width: 50%;
+}
+.AverageСarStats__meaning {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5px;
+}
+.AverageСarStats__meaning p {
+  font-size: 12px;
+  margin-right: 5px;
+  width: 50%;
+  text-align: center;
+}
+
+.box__title {
+  margin-bottom: 10px;
+}
+
+/* Пункт Статистика не рабочего стостояния Машины за «Период» End*/
+/* Пунтк Оповещания  */
+.system__notificationAndСondition {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notificationAndСondition__notification {
+  width: 49%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 70px;
+}
+.notificationAndСondition__СonditionSystem {
+  width: 49%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 70px;
+}
+
+.notification__infoBody {
+  margin-top: 15px;
+}
+
+.infoBody__notInfo {
+  height: 80px;
+  display: block;
+}
+.infoBody__notInfo p {
+  color: silver;
+}
+.infoBody__weHaveInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.weHaveInfo__cashboxEmpty {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f1f6;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 6px;
+}
+.weHaveInfo__warningInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f1f6;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 6px;
+}
+.weHaveInfo__buttonShowAll {
+  font-size: 9px;
+  width: 100px;
+  margin: 10px auto 0px auto;
+  background: none;
+}
+.weHaveInfo__buttonCloseAll {
+  display: none;
+  font-size: 9px;
+  width: 100px;
+  margin: 10px auto 0px auto;
+  background: none;
+}
+
+.cashboxEmptyFlex {
+  display: flex;
+  align-items: center;
+}
+
+.truckEmpty__infoText {
+  font-size: 9px;
+  margin-left: 10px;
+}
+.truckEmpty__buttonLink {
+  background: url("/assets/img/button/link.svg") no-repeat;
+  width: 12px;
+  height: 12px;
+  margin-right: 25px;
+}
+.truckEmpty__buttonCancel {
+  background: url("/assets/img/button/cancel.svg") no-repeat;
+  width: 12px;
+  height: 12px;
+}
+
+.warningInfo__infoText {
+  font-size: 9px;
+  margin-left: 10px;
+}
+.warningInfo__buttonLink {
+  background: url("/assets/img/button/link.svg") no-repeat;
+  width: 12px;
+  height: 12px;
+  margin-right: 25px;
+}
+.warningInfo__buttonCancel {
+  background: url("/assets/img/button/cancel.svg") no-repeat;
+  width: 12px;
+  height: 12px;
+}
+
+#showAllInfoWarning {
+  display: none;
+}
+
+/* Пункт Состояние Системы */
+.notificationAndСondition__СonditionSystem {
+  display: flex;
+  flex-direction: column;
+}
+
+.СonditionSystem__columnNames {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.СonditionSystem__warning {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  background-color: #f0f1f6;
+  padding: 5px 0px 5px 5px;
+  border-radius: 6px;
+}
+.СonditionSystem__normalCondition {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  background-color: #f0f1f6;
+  padding: 5px 0px 5px 5px;
+  border-radius: 6px;
+}
+.СonditionSystem__buttonShowAll {
+  font-size: 9px;
+  width: 100px;
+  margin: 10px auto 0px auto;
+  background: none;
+}
+.СonditionSystem__buttonCloseAll {
+  display: none;
+  font-size: 9px;
+  width: 100px;
+  margin: 10px auto 0px auto;
+  background: none;
+}
+
+.columnNames__car {
+  width: 25%;
+}
+.columnNames__status {
+  width: 30%;
+}
+.columnNames__connection {
+  width: 15%;
+}
+.columnNames__hryvnia {
+  width: 18px;
+}
+.columnNames__coins {
+  width: 20px;
+}
+.columnNames__dollar {
+  width: 20px;
+}
+
+.columnNamesFlexBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.warning__nameCar {
+  width: 25%;
+}
+.warning__infoWarning {
+  width: 30%;
+  display: flex;
+}
+.warning__connection {
+  width: 15%;
+}
+.warning__Dollar {
+  color: red;
+}
+
+.warningFlexBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.infoWarningr__name {
+  background: #ffdcda;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.infoWarning__buttonAddWarning {
+  background: #ffdcda;
+  padding: 4px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.normalCondition__nameCar {
+  width: 25%;
+}
+.normalCondition__nameStatus {
+  width: 30%;
+  display: flex;
+}
+.normalCondition__nameStatus p {
+  color: #49db88;
+  background: #d1f5d9;
+  padding: 5px;
+  border-radius: 5px;
+}
+.normalCondition__connection {
+  width: 15%;
+}
+.normalConditionFlexBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+}
+
+#СonditionSystemShow {
+  display: none;
+}
+
+.Filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 500px;
+  margin: 0px auto;
+}
+
+.filterBox label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  border-radius: 2px;
+  box-shadow: 0 0 2px #cccccc;
+  height: 100%;
+  padding: 9px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 10px;
+  color: #da6e00;
+}
+
+.filterBox label input::-moz-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 10px;
+  color: #da6e00;
+}
+
+.filterBox label input:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 10px;
+  color: #da6e00;
+}
+
+.filterBox label input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 10px;
+  color: #da6e00;
+}
+
+.filterBox span {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+  border-radius: 2px;
+  box-shadow: 0 0 2px #cccccc;
+  height: 100%;
+}
+
+.filterBox span input::-moz-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 10px;
+  color: #da6e00;
+}
+
+.filterBox span input:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 10px;
+  color: #da6e00;
+}
+
+.filterBox span input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 10px;
+  color: #da6e00;
+}
+
+.filterBox span input {
+  width: 200px;
+  padding: 10px;
+}
+
+.select span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 10px;
+}
+
+.dropdown .dropdown-menu li {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 10px;
+}
+
+.filterBox {
+  margin: 5px;
+}
+
+.dropdown {
+  margin: 5px;
+}
+
+span.msg,
+span.choose {
+  color: #555;
+  padding: 5px 0 10px;
+  display: inherit;
+}
+
+.container {
+  width: 500px;
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+/*Styling Selectbox*/
+.dropdown {
+  width: 200px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 2px #cccccc;
+  transition: all 0.5s ease;
+  position: relative;
+  font-size: 14px;
+  color: #da6e00;
+  height: 100%;
+  text-align: left;
+}
+
+.dropdown .select {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.dropdown .select > i {
+  font-size: 13px;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  float: right;
+  line-height: 20px;
+}
+
+.dropdown:hover {
+  box-shadow: 0 0 4px #cccccc;
+}
+
+.dropdown:active {
+  background-color: #f8f8f8;
+}
+
+.dropdown.active:hover,
+.dropdown.active {
+  box-shadow: 0 0 4px #cccccc;
+  border-radius: 2px 2px 0 0;
+  background-color: #f8f8f8;
+}
+
+.dropdown.active .select > i {
+  transform: rotate(-90deg);
+}
+
+.dropdown .dropdown-menu {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  margin-top: 1px;
+  box-shadow: 0 1px 2px #cccccc;
+  border-radius: 0 1px 2px 2px;
+  overflow: hidden;
+  display: none;
+  max-height: 144px;
+  overflow-y: auto;
+  z-index: 9;
+}
+
+.dropdown .dropdown-menu li {
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.dropdown .dropdown-menu {
+  padding: 0;
+  list-style: none;
+}
+
+.dropdown .dropdown-menu li:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown .dropdown-menu li:active {
+  background-color: #e2e2e2;
+}
+
+.filterCarBox {
+  margin: 5px 0px 0px 3px;
+}
+
+.select2 {
+  margin-bottom: 10px !important;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border: none !important;
+  box-shadow: 0 0 2px #cccccc;
+}
+
+.select2-container--default .select2-selection--multiple {
+  border: none !important;
+  box-shadow: 0 0 2px #cccccc;
+}
+
+.select2-search__field {
+  font-family: "Montserrat" !important;
+  font-style: normal;
+  font-weight: 100;
+  color: #da6e00;
+  font-size: 10px !important;
+  margin-top: 7px !important;
+}
+
+.select2-search__field::-moz-placeholder {
+  color: #da6e00;
+}
+
+.select2-search__field:-ms-input-placeholder {
+  color: #da6e00;
+}
+
+.select2-search__field::placeholder {
+  color: #da6e00;
+}
+
+.select2-results__options {
+  background-color: #ffff;
+}
+
+.select2-results__option.select2-results__option--selectable {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 10px;
+  color: #da6e00;
+}
+
+.select2-selection__choice__display {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 10px;
+  color: #da6e00;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #fff !important;
+}
+
+.select2-results__option.select2-results__message {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 10px;
+  color: #da6e00;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 100px 0px 100px 0px;
+  border: 3px solid #da6e00;
+  width: 80%;
+}
+
+.maodal-btn {
+  visibility: visible;
+  border-radius: 5px;
+  background-color: #f2e3d4;
+  padding: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 10px;
+  margin: 10px auto 0px auto;
+}
+
+.maodal-btn:hover {
+  color: #da6e00;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#myBtn {
+  background: url("/assets/img/settings/settings.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 17px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  display: none;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ff3c3c;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 2px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
